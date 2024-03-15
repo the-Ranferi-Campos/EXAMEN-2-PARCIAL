@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Bienvenida</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+</style>
+</head>
+<body>
+
+<form id="formulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required><br><br>
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" required><br><br>
+    <button type="submit">Enviar</button>
+</form>
+
+<script>
+    document.getElementById('formulario').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita que el formulario se envíe por defecto
+
+        var nombre = document.getElementById('nombre').value;
+        var edad = parseInt(document.getElementById('edad').value);
+
+        if (edad >= 18) {
+            alert("¡Hola, " + nombre + "! Eres mayor de edad");
+        } else {
+            alert("¡Hola, " + nombre + "! Eres menor de edad");
+        }
+    });
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fondo Celeste</title>
+<style>
+  body {
+    background-color: #ADD8E6; /* Código de color celeste */
+    /* También puedes utilizar nombres de colores en lugar de códigos hexadecimales, por ejemplo:
+    background-color: skyblue; */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    font-family: Arial, sans-serif; /* Define una fuente de texto para el contenido */
+  }
+  /* Puedes añadir estilos adicionales para otros elementos si lo deseas */
+</style>
+</head>
+<body>
+
+<!-- Aquí colocarías el contenido de tu página -->
+
+</body>
+</html>
+
